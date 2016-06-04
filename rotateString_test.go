@@ -1,6 +1,9 @@
 package rotateString
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestRotate(t *testing.T) {
 	s := Rotate("Cesar")
@@ -13,4 +16,9 @@ func TestRotate(t *testing.T) {
 		t.Errorf("Rotate string fail, returned \"%s\"", s)
 	}
 
+}
+
+func ExampleRotate() {
+	fmt.Println(Rotate("Hello"))
+	// Output: olleH
 }
